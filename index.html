@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#063b91"
+    >
+
+    <title>
+        Convite — Turma | Matemática Licenciatura | UEMA
+    </title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TELA DE ABERTURA
+    ====================================================== -->
+
+    <div
+        id="abertura"
+        class="abertura"
+    >
+
+        <div class="abertura-brilho"></div>
+
+        <div class="abertura-conteudo">
+
+            <div class="capelo">
+                🎓
+            </div>
+
+            <p class="abertura-superior">
+                UNIVERSIDADE ESTADUAL DO MARANHÃO
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <h1>
+                Formatura
+            </h1>
+
+            <p class="abertura-curso">
+                Matemática Licenciatura
+            </p>
+
+            <p class="abertura-turma">
+                Polo Água Doce do Maranhão
+            </p>
+
+            <button
+                id="btnAbrir"
+                class="btn-abrir"
+            >
+                <span>ABRIR CONVITE</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MÚSICA
+    ====================================================== -->
+
+    <audio
+        id="audio"
+        loop
+    >
+
+        <source
+            src="musica/Jota Quest - Dias Melhores (Acústico).mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <button
+        id="botaoMusica"
+        class="botao-musica"
+        aria-label="Controlar música"
+    >
+        ♪
+    </button>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="particulas"></div>
+
+        <div class="hero-conteudo">
+
+            <p class="hero-superior">
+                UNIVERSIDADE ESTADUAL DO MARANHÃO
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <p class="hero-evento">
+                CONVITE DE FORMATURA
+            </p>
+
+            <h1> 
+                Matemática
+            </h1>
+
+            <h2>
+                Licenciatura
+            </h2>
+
+            <p class="hero-polo">
+                POLO ÁGUA DOCE DO MARANHÃO
+            </p>
+
+            <div class="hero-data">
+
+                <span>
+                    08
+                </span>
+
+                <div>
+                    <strong>
+                        DEZEMBRO
+                    </strong>
+
+                    <small>
+                        2026
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="scroll">
+
+                <span>
+                    DESLIZE PARA CONTINUAR
+                </span>
+
+                <i></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MENSAGEM
+    ====================================================== -->
+
+    <section class="mensagem">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                UMA CONQUISTA
+            </p>
+
+            <h2>
+                Um sonho que se tornou realidade.
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+            <p class="texto">
+
+                Foram anos de dedicação, estudos,
+                desafios, descobertas e muito aprendizado.
+
+                <br><br>
+
+                Cada cálculo, cada prova e cada desafio
+                fizeram parte de uma caminhada que agora
+                chega a um momento inesquecível.
+
+                <br><br>
+
+                Com imensa alegria, a
+                <strong>
+                    Turma de Matemática Licenciatura
+                </strong>
+                convida você para celebrar conosco
+                essa grande conquista.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTAGEM
+    ====================================================== -->
+
+    <section class="contador-section">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                O GRANDE DIA
+            </p>
+
+            <h2>
+                A contagem começou
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="contador">
+
+                <div class="contador-item">
+
+                    <strong id="dias">
+                        00
+                    </strong>
+
+                    <span>
+                        DIAS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="horas">
+                        00
+                    </strong>
+
+                    <span>
+                        HORAS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="minutos">
+                        00
+                    </strong>
+
+                    <span>
+                        MINUTOS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="segundos">
+                        00
+                    </strong>
+
+                    <span>
+                        SEGUNDOS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COLAÇÃO DE GRAU
+    ====================================================== -->
+
+    <section class="colacao">
+
+        <div class="colacao-decoracao"></div>
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                MOMENTO ESPECIAL
+            </p>
+
+            <h2>
+                Colação de Grau
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+            <p class="colacao-texto">
+
+                Chegou o momento de celebrar o encerramento
+                de uma etapa e o início de uma nova jornada.
+
+                <br><br>
+
+                A solenidade de
+                <strong>
+                    Colação de Grau
+                </strong>
+                da turma de
+                <strong>
+                    Matemática Licenciatura
+                </strong>
+                será realizada em uma noite preparada
+                para guardar memórias para toda a vida.
+
+            </p>
+
+
+            <div class="colacao-data">
+
+                <div>
+
+                    <span>
+                        08
+                    </span>
+
+                    <small>
+                        DE DEZEMBRO
+                    </small>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="separador"></div>
+
+
+                <div>
+
+                    <span>
+                        20h
+                    </span>
+
+                    <small>
+                        INÍCIO
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LOCAL
+    ====================================================== -->
+
+    <section class="local">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                ONDE NOS ENCONTRAR
+            </p>
+
+            <h2>
+                O grande encontro
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="local-card">
+
+                <div class="local-icon">
+                    📍
+                </div>
+
+                <h3>
+                    U.E.B. Mariana Pereira Cardoso
+                </h3>
+
+                <p>
+                    Rua das Nações Nº01
+                </p>
+
+                <p>
+                    Água Doce do Maranhão — MA
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://www.google.com/maps/search/?api=1&query=U.E.B.+Mariana+Pereira+Cardoso,+Rua+das+Nações+Nº01,+Água+Doce+do+Maranhão"
+                    target="_blank"
+                >
+                    ABRIR LOCALIZAÇÃO
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALERIA
+    ====================================================== -->
+
+    <section class="galeria-section">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                MEMÓRIAS
+            </p>
+
+            <h2>
+                Uma história para recordar
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="galeria">
+
+                <div class="foto foto-grande">
+
+                    <img
+                        src="imagens/imagem 01.jpeg"
+                        alt="Turma de Matemática"
+                    >
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img
+                        src="imagens/imagem 02.jpeg"
+                        alt="Formatura"
+                    >
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img
+                        src="imagens/imagem 03.jpeg"
+                        alt="Turma"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MENSAGEM FINAL
+    ====================================================== -->
+
+    <section class="final">
+
+        <div class="container">
+          
+            <h2>
+                Toda grande conquista
+                começa com um sonho. 
+            </h2>
+
+            <p>
+
+                E hoje celebramos não apenas
+                um diploma, mas toda a trajetória
+                que nos trouxe até aqui.
+
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <strong>
+                TURMA DE MATEMÁTICA LICENCIATURA
+            </strong>
+
+            <span>
+                UEMA — POLO ÁGUA DOCE DO MARANHÃO
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONFIRMAÇÃO
+    ====================================================== -->
+
+    <section class="confirmacao">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                SUA PRESENÇA É ESPECIAL
+            </p>
+
+            <h2>
+                Vamos celebrar juntos?
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+            <p>
+
+                Confirme sua presença através
+                do WhatsApp.
+
+            </p>
+
+
+            <a
+                id="whatsapp"
+                class="btn btn-whatsapp"
+                href="#"
+                target="_blank"
+            >
+                CONFIRMAR PRESENÇA
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <div class="capelo-footer">
+            🎓
+        </div>
+
+        <h3>
+            Matemática Licenciatura
+        </h3>
+
+        <p>
+            UNIVERSIDADE ESTADUAL DO MARANHÃO — UEMA
+        </p>
+
+        <p>
+            POLO ÁGUA DOCE DO MARANHÃO
+        </p>
+
+        <div class="linha-dourada"></div>
+
+        <small>
+            08 DE DEZEMBRO DE 2026 • 20H
+        </small>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
